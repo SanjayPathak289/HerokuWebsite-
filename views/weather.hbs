@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{>headerLinks}}
+
+</head>
+
+<body>
+    
+    {{>navbar}}
+
+
+    <div class="weatherCont">
+
+        <div class="formdiv">
+            <form class="temp_form">
+                <input type="text" id="cityName" placeholder="Enter City Name" autocomplete="off">
+                <input type="submit" value="Search" id="searchBtn">
+            </form>
+        </div>
+
+        <div class="tempInfo">
+            <div class="todayData">
+                <div id="dayName">Thursday</div>
+                <div id="dateName">22 OCT</div>
+            </div>
+
+            <div class="outputData">
+                <div id="enterCity">Enter Any City Name</div>
+                <div id="weatherStatus"></div>
+            </div>
+        </div>
+    </div>
+
+{{>footer}}
+   
+</body>
+<script src="js/main.js"></script>
+</html>
